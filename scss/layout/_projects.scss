@@ -1,0 +1,17 @@
+.project {
+    display: block;
+    background: $backgroundsection;
+    padding: 30px 0;
+    box-shadow:
+        inset 0px 11px 8px -10px $accentcolor,
+        inset 0px -11px 8px -10px $accentcolor;
+    margin-bottom: 30px;
+    border-top: 2px solid $accentcolor;
+    border-bottom: 2px solid $accentcolor;
+}
+
+@media screen and (min-width: 900px) {
+    .project {
+        display: flex;
+    }
+}

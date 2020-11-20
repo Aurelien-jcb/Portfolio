@@ -1,0 +1,78 @@
+/* Bases */
+
+/* Variables colors */
+$backgroundcolor: rgb(34, 36, 42);
+$accentcolor : #f29100;
+$backgroundsection: #6F6F6F;
+$fontcolor : #F5F2F2;
+$secondfontcolor: #999;
+
+/* Font Import */
+@font-face {
+    font-family: "Montserrat";
+    src: url("/font/Montserrat/Montserrat-SemiBold.ttf")
+}
+@font-face {
+    font-family: "Arvo";
+    src: url("/font/Arvo/Arvo-Bold.ttf")
+}
+
+/* General */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: $backgroundcolor;
+    color: $fontcolor;
+
+    a {
+        color: $fontcolor;
+        text-decoration: underline;
+
+        &:hover {
+            color: $accentcolor;
+        }
+    }
+}
+
+/* Titles */
+h1 {
+    font-size: 1.875rem;
+}
+
+h1,
+h2 {
+    font-family: Arvo;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 1.5625rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h2::first-letter {
+    text-decoration: underline $accentcolor;
+}
+
+@media screen and (min-width: 900px) {
+    body {
+        font-size: 1.1rem;
+    }
+
+    h1 {
+        font-size: 3.2rem;
+    }
+
+    h2 {
+        font-size: 2.0625rem;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
+
+}

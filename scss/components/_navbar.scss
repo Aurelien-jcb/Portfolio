@@ -1,0 +1,56 @@
+/* NavBar Components */
+.navbar-brand {
+  text-decoration: none;
+  color: $fontcolor !important;
+}
+
+.nav-item {
+  text-align: right !important;
+}
+
+.nav__social {
+  display: none;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(242,145,0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler:focus {
+  outline: none !important;
+}
+
+.custom-toggler.navbar-toggler {
+  border: none;
+}
+
+.custom-link {
+  color: $accentcolor !important;
+  position: relative;
+  text-decoration: none;
+  margin-right: 15px;
+  transition: .5s;
+}
+
+.custom-link:hover {
+  margin-right: 10px;
+  text-decoration: underline;
+  text-decoration-color: $accentcolor !important;
+  color: $fontcolor !important;
+}
+
+@media screen and (min-width: 900px) {
+  .navbar {
+    margin: 19px 65px;
+  }
+
+  .nav__social {
+    display: block;
+  }
+
+  .nav__social a {
+    color: $accentcolor;
+    font-size: 30px;
+    margin-right: 34px;
+  }
+}

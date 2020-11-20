@@ -1,0 +1,57 @@
+/* Skills section */
+.skills {
+    &__content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        margin: 40px 20px;
+        align-items: center;
+    }
+
+    &__title::before,
+    &__title::after {
+        display: inline-block;
+        vertical-align: middle;
+        content: " ";
+        background-color: $accentcolor;
+        width: 60px;
+        margin: 15px;
+        height: 3px;
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 10px auto 40px;
+        padding: 0;
+    }
+
+    &__list li {
+        margin: 10px 0;
+    }
+
+    &__separator {
+        margin: 0 5px;
+        display: inline-block;
+        height: 4px;
+        width: 4px;
+        background-color: $accentcolor;
+        border-radius: 100%;
+    }
+
+}
+
+@media screen and (min-width: 900px) {
+    .skills {
+        margin-top: 250px;
+        display: flex;
+    }
+
+    .skills__content {
+        width: 50%;
+        margin: 90px auto;
+    }
+}

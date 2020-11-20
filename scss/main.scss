@@ -1,0 +1,31 @@
+/** Normalize CSS **/
+@import "node_modules/normalize.css/normalize";
+
+/** Required Bootstrap **/
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/reboot";
+
+/** Optional Bootstrap Navbar **/
+@import "node_modules/bootstrap/scss/transitions";
+@import "node_modules/bootstrap/scss/dropdown";
+@import "node_modules/bootstrap/scss/navbar";
+
+/** Base **/
+@import 'base';
+
+/** Layouts **/
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/contact';
+@import 'layout/skills';
+@import 'layout/about';
+@import 'layout/projects';
+
+/** Components **/
+@import 'components/form';
+@import 'components/card';
+@import 'components/button';
+@import 'components/navbar';
+@import 'components/pagination';

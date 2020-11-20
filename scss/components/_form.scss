@@ -1,0 +1,63 @@
+/* Form Components */
+.form {
+  width: 300px;
+  margin: 50px 0;
+  box-sizing: border-box;
+
+  .form__input {
+    padding: 10px 0;
+    margin-bottom: 30px;
+  }
+
+  .form__textarea {
+    height: 80px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .form__input,
+  .form__textarea {
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid $fontcolor;
+    background-color: transparent;
+  }
+
+  .form__section {
+    position: relative;
+  }
+
+  .form__label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    color: $secondfontcolor;
+    transition: .5s;
+    pointer-events: none;
+  }
+
+  .form__input:focus~label,
+  .form__textarea:focus~label,
+  .form__input:valid~label,
+  .form__textarea:valid~label {
+    top: -12px;
+    left: 0;
+    font-size: 12px;
+    color: $accentcolor;
+
+  }
+
+  .form__input:focus,
+  .form__textarea:focus,
+  .form__input:valid,
+  .form__textarea:valid {
+    border-bottom: 1px solid $accentcolor;
+    color: $fontcolor;
+  }
+
+  .form__button {
+    border: none;
+  }
+}
