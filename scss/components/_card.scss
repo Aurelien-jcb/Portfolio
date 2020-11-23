@@ -36,18 +36,19 @@
 
     .--projects {
         margin-left: 30px;
-    }
 
-    .--secondproject {
-        margin-bottom: 65px;
-    }
-
-    .--thirdproject {
-        margin-bottom: 43px;
-
-        &.span {
-            font-size: 0.8rem;
+        .--thirdproject {
+            margin-bottom: 40px;
         }
+
+        .--fourthproject {
+            margin-bottom: 43px;
+        }
+
+    }
+
+    span {
+        font-size: 0.8rem;
     }
 }
 
@@ -76,9 +77,11 @@
         }
 
         .--thirdproject {
-            margin-bottom: 20px;
+            margin-bottom: 39px;
+        }
+
+        .--fourthproject {
+            margin-bottom: 18px;
         }
     }
-
-
 }

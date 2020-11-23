@@ -1,0 +1,37 @@
+/* Diagonal background */
+.diagonal__box {
+    position: relative;
+    height: 5px;
+
+    &:before {
+        content: " ";
+        position: absolute;
+        top: -700px;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: $backgroundsection;
+        box-shadow: inset 0px 11px 8px -10px $accentcolor, inset 0px -11px 8px -10px $accentcolor;
+        transform: skewY(-11deg);
+        border-top: 2px solid $accentcolor;
+        border-bottom: 2px solid $accentcolor;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .diagonal__box {
+        height: 100px;
+        margin-bottom: 30px;
+
+        &:before {
+            top: -120px;
+            bottom: -700px;
+        }
+    }
+}
+
+@media screen and (min-width: 1130px) {
+    .diagonal__box:before {
+        bottom: -510px;
+    }
+}

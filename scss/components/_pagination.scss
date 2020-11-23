@@ -60,14 +60,10 @@
     }
 
     .number__section {
-        position: relative;
         margin-left: 80px;
 
         .number__container {
             height: 400px;
-            display: flex;
-            align-items: center;
-            justify-content: end;
             flex-direction: column-reverse;
         }
 
@@ -87,11 +83,14 @@
         .number__number {
             margin-bottom: 0;
         }
+    }
+
+    .--about {
+        margin-left: 55px;
 
         .--aboutnbr {
             justify-content: flex-end;
         }
-
     }
 
     .--skillsnbr {

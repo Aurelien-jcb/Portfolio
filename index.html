@@ -15,7 +15,7 @@
 <body>
   <header>
     <nav class="navbar navbar-light bg-light">
-      <a class="navbar-brand --brand" href="#"><img src="/img/logo.svg" alt="Logo Aurélien Jacob"></a>
+      <a class="navbar-brand --brand" href="/"><img src="/img/logo.svg" alt="Logo Aurélien Jacob"></a>
       <div class="nav__social">
         <a href="www.linkedin.com/in/aurélien-jacob"><i class="fab fa-linkedin-in"></i></a>
         <a href="https://github.com/Aurelien-jcb"><i class="fab fa-github"></i></a>
@@ -25,7 +25,7 @@
         aria-label="Toggle navigation">
         <span class="custom-toggler navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse " id="navbarNavDropdown">
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ">
           <li class="nav-item ">
             <a class="nav-link custom-link " href="#accueil">Accueil</a>
@@ -50,7 +50,7 @@
       </div>
     </nav>
   </header>
-  <header class="diagonal__box --diagonal" id="accueil">
+  <header id="accueil">
     <div class="number__section --desktop">
       <div class="number__container">
         <p class="number__text">Accueil</p>
@@ -58,13 +58,14 @@
       </div>
     </div>
     <section class="banner">
-      <img src="/img/aurelien_jacob.webp" alt="Portrait Aurélien Jacob" class="banner__profile --border">
+      <img src="/img/aurelien_jacob2.webp" alt="Portrait Aurélien Jacob" class="banner__profile --border">
       <div class="banner__container">
-        <h1 class="banner__title"><span id="bonjour">Bonjour</span>,<br> je suis <span class="underline">Aurélien Jacob</span> <br>
+        <h1 class="banner__title"><span id="bonjour">Bonjour</span>,<br> je suis <span class="underline">Aurélien
+            Jacob</span> <br>
           <strong>Développeur web & web mobile</strong>
         </h1>
         <div class="btn__container">
-          <a href="" class="banner__btn --btn">Contactez-moi</a>
+          <a href="#contact" class="banner__btn --btn">Contactez-moi</a>
         </div>
       </div>
     </section>
@@ -74,17 +75,18 @@
         <p class="number__number ">01</p>
       </div>
     </div>
-    <img src="/img/laptop_code.webp" alt="" class="banner__picture">
+    <img src="/img/laptop_code.webp" alt="Photo d'un ordinateur avec du code" class="banner__picture">
   </header>
   <main>
+    <div class="diagonal__box --diagonal"> </div>
     <section class="about" id="a-propos">
-      <div class="number__section">
+      <div class="number__section --about">
         <div class="number__container --aboutnbr --orange">
           <p class="number__text ">À propos</p>
           <p class="number__number ">02</p>
         </div>
       </div>
-      <img src="/img/laptop_code.webp" alt="Photo d'un ordinateur avec du code" class="about__picture --canceldiagonal">
+      <img src="/img/laptop_code.webp" alt="Photo d'un ordinateur avec du code" class="about__picture">
       <div class="about__content">
         <h2 class="about__title">
           À propos de moi
@@ -99,13 +101,13 @@
           je ne suis pas contre l'idée de travailler sur des projets back end.
         </p>
         <p class="about__paragraph">
-          <strong>Agile</strong> et <strong>rigoureux</strong>, je suis à la recherche d'une nouvelle
-          opportunité de mettre à profil mes compétences fraîchement
+          <strong>Agile</strong> et <strong>rigoureux</strong>, je suis à la recherche d'une opportunité de mettre à
+          profil mes compétences fraîchement
           acquises pendant ma formation <strong>développeur web & web mobile</strong> à <a
             href="https://popschool.fr/">Pop School
-            Lens</a>.
-          Quand je ne fais pas de développement, j'aime regarder une bonne série, faire du sport
-          en salle, et profiter de ma famille (récemment papa d'une merveilleuse fille).
+            Lens</a>. <br>
+          Quand je ne fais pas de développement, j'aime regarder une bonne série, faire du sport, et profiter de ma
+          famille (récemment papa d'une merveilleuse fille).
           <br> <a class="about__link" href="/img/cv_aurelien_jacob.pdf"><i class="fas fa-file-download"></i>
             Télécharger mon CV</a>
         </p>
@@ -191,11 +193,24 @@
           </div>
         </div>
         <div class="projects__card">
+          <img class="projects__img" src="/img/mockup_showtrack.webp" alt="Mockup du site Showtrack">
+          <h4 class="projects__title">Showtrack</h4>
+          <p class="projects__paragraph --secondproject">Exercice d'intégration rélisé au cours de ma formation <a
+              href="https://popschool.fr/">Pop School
+              Lens</a>. Développé en HTML et CSS, cet exercice avait pour objectif de mettre en pratique le <strong>mobile-first</strong> et la <strong>notation BEM</strong>.</p>
+          <div class="btn__container --projects">
+            <a href="https://showtrack-ajcb.netlify.app" class="projects__btn --btn">Voir le projet</a>
+          </div>
+        </div>
+        <div class="projects__card">
           <img class="projects__img" src="/img/mockup_transportsdaurat.webp"
             alt="Mockup du site de la société Transports Daurat">
           <h4 class="projects__title">Transports Daurat</h4>
-          <p class="projects__paragraph --secondproject">Refonte du site web sous Wordpress de Transports Daurat,
-            entreprise spécialisée dans le transport de liquide alimentaire.</p>
+          <p class="projects__paragraph --thirdproject">Refonte du site web sous Wordpress de Transports Daurat,
+            entreprise spécialisée dans le transport de liquide alimentaire .<br>
+            <span>(site actuellement en développement)</span>
+          </p>
+            
           <div class="btn__container --projects">
             <a href="https://transportsdaurat.com/" class="projects__btn --btn">Voir le projet</a>
           </div>
@@ -203,7 +218,7 @@
         <div class="projects__card">
           <img class="projects__img" src="/img/mockup_akmedia.webp" alt="Mockup du site de l'agence AK Media Agency">
           <h4 class="projects__title">Ak Media Agency</h4>
-          <p class="projects__paragraph --thirdproject">Réalisation de la maquette et développement du site Wordpress de
+          <p class="projects__paragraph --fourthproject">Réalisation de la maquette et développement du site Wordpress de
             l'agence AK Media Agency, spécialisée dans le marketing de luxe. <br> <span>(site actuellement hors
               ligne)</span></p>
           <div class="btn__container --projects">
@@ -221,35 +236,35 @@
       </div>
       <div class="contact__content">
         <h2 class="contact__title">Me contacter</h2>
-          <p class="contact__paragraph">Contactez-moi pour toute demande de projets ou pour échanger sur le
-            développement.</p>
-          <div class="contact__section">
-            <div class="contact__icons">
-              <p class="contact__info"><i class="fas fa-phone-alt"></i> 07.60.74.08.51</p>
-              <p class="contact__info"><i class="fas fa-map-marker-alt"></i> Lens, FRANCE</p>
-              <div class="contact__social">
-                <a href="www.linkedin.com/in/aurélien-jacob"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://github.com/Aurelien-jcb"><i class="fab fa-github"></i></a>
-              </div>
+        <!-- <p class="contact__paragraph">Contactez-moi pour toute demande de projets ou pour échanger sur le
+          développement.</p> -->
+        <div class="contact__section">
+          <div class="contact__icons">
+            <p class="contact__info"><i class="fas fa-phone-alt"></i> 07.60.74.08.51</p>
+            <p class="contact__info"><i class="fas fa-map-marker-alt"></i> Lens, FRANCE</p>
+            <div class="contact__social">
+              <a href="www.linkedin.com/in/aurélien-jacob"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://github.com/Aurelien-jcb"><i class="fab fa-github"></i></a>
             </div>
-            <form action="" class="form" name="contact" netlify>
-              <div class="form__section">
-                <input class="form__input" type="text" name="name" id="name" required>
-                <label for="name" class="form__label">Votre Nom</label>
-              </div>
-              <div class="form__section">
-                <input class="form__input" type="email" name="email" id="email" required>
-                <label for="email" class="form__label">Votre E-mail</label>
-              </div>
-              <div class="form__section">
-                <textarea name="message" class="form__textarea" id="message" required></textarea>
-                <label for="message" class="form__label">Votre message</label>
-              </div>
-              <div class="btn__container --projects">
-                <button type="submit" class="form__button --btn">Envoyez !</button>
-              </div>
-            </form>
           </div>
+          <form action="" class="form" name="contact" netlify>
+            <div class="form__section">
+              <input class="form__input" type="text" name="name" id="name" required>
+              <label for="name" class="form__label">Votre Nom</label>
+            </div>
+            <div class="form__section">
+              <input class="form__input" type="email" name="email" id="email" required>
+              <label for="email" class="form__label">Votre E-mail</label>
+            </div>
+            <div class="form__section">
+              <textarea name="message" class="form__textarea" id="message" required></textarea>
+              <label for="message" class="form__label">Votre message</label>
+            </div>
+            <div class="btn__container --projects">
+              <button type="submit" class="form__button --btn">Envoyez !</button>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
   </main>
