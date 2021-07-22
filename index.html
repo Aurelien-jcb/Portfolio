@@ -20,6 +20,46 @@
         <a href="https://linkedin.com/in/aurélien-jacob"><i class="fab fa-linkedin-in"></i></a>
         <a href="https://github.com/Aurelien-jcb"><i class="fab fa-github"></i></a>
       </div>
+      <!-- <button class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+        <svg width="40" height="40" viewBox="0 0 100 100">
+          <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+          <path class="line line2" d="M 20,50 H 80" />
+          <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+        </svg>
+        <ul class="menu__container">
+          <li class="menu__item">
+            <a id="home" class="menu_link " href="#accueil">
+              Accueil
+            </a>
+          </li>
+          <li class="menu__item">
+            <a id="about" class="menu_link " href="#a-propos">
+              À propos
+            </a>
+          </li>
+          <li class="menu__item">
+            <a id="contact" class="menu_link " href="#competences">
+              Mes compétences
+            </a>
+          </li>
+          <li class="menu__item">
+            <a id="contact" class="menu_link " href="#projets">
+              Mes projets
+            </a>
+          </li>
+          <li class="menu__item">
+            <a id="contact" class="menu_link " href="#contact">
+              Me contacter
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="nav-link custom-link" href="/img/cv_aurélien_jacob.pdf"><i class="fas fa-file-download"></i>
+              Télécharger mon CV
+            </a>
+          </li>
+          </li>
+        </ul>
+      </button> -->
       <button class="custom-toggler navbar-toggler" type="button" data-toggle="collapse"
         data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
         aria-label="Toggle navigation">
@@ -27,23 +67,23 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ">
-          <li class="nav-item ">
-            <a class="nav-link custom-link " href="#accueil">Accueil</a>
+          <li class="menu__item ">
+            <a class="menu-link custom-link " href="#accueil">Accueil</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link custom-link" href="#a-propos">À propos</a>
+          <li class="menu__item">
+            <a class="menu-link custom-link" href="#a-propos">À propos</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link custom-link" href="#competences">Mes compétences</a>
+          <li class="menu__item">
+            <a class="menu-link custom-link" href="#competences">Mes compétences</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link custom-link" href="#projets">Mes projets</a>
+          <li class="menu__item">
+            <a class="menu-link custom-link" href="#projets">Mes projets</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link custom-link" href="#contact">Me contacter</a>
+          <li class="menu__item">
+            <a class="menu-link custom-link" href="#contact">Me contacter</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link custom-link" href="/img/cv_aurélien_jacob.pdf"><i class="fas fa-file-download"></i>
+          <li class="menu__item">
+            <a class="menu-link custom-link" href="/img/cv_aurélien_jacob.pdf"><i class="fas fa-file-download"></i>
               Télécharger mon CV</a>
           </li>
         </ul>
@@ -193,11 +233,12 @@
           <h4 class="projects__title">Atelier Bunus & Galioto</h4>
           <p class="projects__paragraph">Réalisation de la charte graphique et développement sous Wordpress du site
             de l'atelier Bunus & Galioto, atelier de restauration de tableaux et d'oeuvres d'art situé dans le centre de
-            Meaux.
+            Meaux.<br> <span>(site actuellement hors
+              ligne)</span></p>
           </p>
-          <div class="btn__container --projects">
+          <!-- <div class="btn__container --projects">
             <a href="https://www.atelierbunusgalioto.fr/" class="projects__btn --btn">Voir le projet</a>
-          </div>
+          </div> -->
         </div>
         <div class="projects__card">
           <img class="projects__img" src="/img/mockup_showtrack.webp" alt="Mockup du site Showtrack">
@@ -214,10 +255,8 @@
             alt="Mockup du site de la société Transports Daurat">
           <h4 class="projects__title">Transports Daurat</h4>
           <p class="projects__paragraph --thirdproject">Refonte du site web sous Wordpress de Transports Daurat,
-            entreprise spécialisée dans le transport de liquide alimentaire .<br>
-            <span>(site actuellement en développement)</span>
+            entreprise spécialisée dans le transport de liquide alimentaire .
           </p>
-            
           <div class="btn__container --projects">
             <a href="https://transportsdaurat.com/" class="projects__btn --btn">Voir le projet</a>
           </div>
@@ -233,11 +272,19 @@
           </div>
         </div>
         <div class="projects__card">
-          <img class="projects__img" src="/img/mockup_password_generator.png" alt="Mockup d'un générateur de mot de passe">
+          <img class="projects__img" src="/img/mockup_password_generator.webp" alt="Mockup d'un générateur de mot de passe">
           <h4 class="projects__title">Générateur de mot de passe</h4>
           <p class="projects__paragraph --fourthproject">Développé en Javascript, HTML et CSS, ce générateur permet de générer un mot de passe sécurisé et de le copier directement.</p>
           <div class="btn__container --projects">
             <a href="https://generateur-motdepasse.netlify.app/" class="projects__btn --btn">Voir le projet</a>
+          </div>
+        </div>
+        <div class="projects__card">
+          <img class="projects__img" src="/img/mockup_gtbconseils.webp" alt="Mockup d'un générateur de mot de passe">
+          <h4 class="projects__title">GTB Conseils</h4>
+          <p class="projects__paragraph --fourthproject">Développement du site sous Wordpress de GTB COnseils. Agence spécialisé dans la formation et l'accompagnement de la gestion de vos finances.</p>
+          <div class="btn__container --projects">
+            <a href="https://www.gtbconseils.com/" class="projects__btn --btn">Voir le projet</a>
           </div>
         </div>
       </div>
