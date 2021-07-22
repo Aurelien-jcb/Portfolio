@@ -10,3 +10,19 @@ function updateHello() {
     }
 }
 updateHello();
+
+const menuToggle = document.querySelector('.toggle');
+const sideMenu = document.querySelector('.menu__container');
+const navLink = document.querySelectorAll('.menu__item');
+
+menuToggle.addEventListener('click', () => {
+    menuToggle.classList.toggle('opened');
+    sideMenu.classList.toggle('openedMenu');
+})
+
+navLink.forEach(function (elem) {
+    elem.addEventListener("click", function () {
+        menuToggle.classList.remove('opened');
+        sideMenu.classList.remove('openedMenu');
+    });
+});

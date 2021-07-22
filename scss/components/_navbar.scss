@@ -4,61 +4,60 @@
   color: $fontcolor !important;
 }
 
-.menu__item {
-  text-align: right !important;
-}
-
 .nav__social {
   display: none;
 }
 
-.custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(242,145,0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-
-.custom-toggler:focus {
-  outline: none !important;
-}
-
-.custom-toggler.navbar-toggler {
-  border: none;
-}
-
 .menu__item {
-  color: $accentcolor !important;
+  color: $backgroundcolor;
+  border-bottom: 1px solid $accentcolor;
+  padding-bottom: 3px;
+  padding-top: 30px;
   position: relative;
-  text-decoration: none;
+
   margin-right: 15px;
   transition: .5s;
+}
+.menu__item a {
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: uppercase;
 }
 
 .menu__item:hover {
   margin-right: 20px;
-  text-decoration: underline;
-  text-decoration-color: $accentcolor !important;
-  color: $fontcolor !important;
+  border-bottom: 1px solid $accentcolor;
+  padding-bottom: 3px;
+  color: $backgroundcolor;
 }
 
 .menu__container {
-  display: none;
+  box-shadow: 0 0 10px #030303;
+  text-align: center;
+  display: flex;
   list-style: none;
   position: fixed;
   width: 400px;
   height: 100%;
   top: 0;
   right: 0;
-  background-color: red;
+  background-color: $backgroundsection;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   box-shadow: black;
   transition: all 0.3s linear;
-  transform: translate(0%);
+  transform: translate(102%);
   z-index: 5;
+}
+
+.openedMenu{
+  transform: translate(0%);
 }
 
 @media screen and (min-width: 670px) {
     .menu__container {
-        width: 100%;
-
+        width: 30%;
     }
 }
 .menu {
@@ -69,6 +68,7 @@
   padding: 0;
   width: 40px;
   height: 40px;
+  z-index: 10;
 }
 .menu:focus {
   outline: none;
@@ -107,10 +107,7 @@
   stroke-dashoffset: -134;
   stroke-width: 6;
 }
-.opened .menu__container{
-  display: block;
-  transform: translate(10%);
-}
+
 @media screen and (min-width: 900px) {
   .navbar {
     margin: 19px 65px;
