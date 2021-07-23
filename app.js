@@ -1,5 +1,5 @@
 'use strict';
-
+  console.log("\n %c Designed By Aurélien Jacob \n\n","color: #fff; background: #F29100; padding:10px 0;border-radius: 5px");
 function updateHello() {
     const today = new Date();
     const hello = document.getElementById('bonjour');
