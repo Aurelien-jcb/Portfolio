@@ -7,12 +7,13 @@
   <title>Aurélien Jacob Développeur web & web mobile</title>
   <meta name="google-site-verification" content="dzEFqf98rQYq5hyVaogjrH6bWQmRtJWdlPyrfoc2xK0" />
   <meta name="description"
-    content="Actuellement en formation Développeur Web & Web mobile chez Pop School Lens, je suis à la recherche d'un stage d'une durée de 2 à 6 mois. ">
+    content="Actuellement en fin de stage Développeur full stack, React.js / .net Core, je suis à la recherche d'une opportunité. ">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/locomotive-scroll.css">
   <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 </head>
 
-<body>
+<body data-scroll-container>
   <header>
     <nav class="navbar navbar-light bg-light">
       <a class="navbar-brand --brand" href="/"><img src="/img/logo.svg" alt="Logo Aurélien Jacob"></a>
@@ -22,36 +23,84 @@
       </div>
       <button class="menu toggle" aria-label="Main Menu">
         <svg width="40" height="40" viewBox="0 0 100 100">
-          <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+          <path class="line line1"
+            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
           <path class="line line2" d="M 20,50 H 80" />
-          <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+          <path class="line line3"
+            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
         </svg>
       </button>
       <ul class="menu__container">
         <li class="menu__item">
-          <a class="menu_link " href="#accueil">
+          <a class="menu_link" href="#accueil">
             Accueil
           </a>
+          <div class="marquee__section first">
+            <div class="marquee__conainer">
+              <div class="marquee">
+                <div class="marquee__inner first">
+                  <span>ACCUEIL</span><span>ACCUEIL</span><span>ACCUEIL</span><span>ACCUEIL</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </li>
         <li class="menu__item">
           <a class="menu_link " href="#a-propos">
             À propos
           </a>
+          <div class="marquee__section second">
+            <div class="marquee__conainer">
+              <div class="marquee">
+                <div class="marquee__inner second">
+                  <span>À PROPOS</span><span>À PROPOS</span><span>À PROPOS</span><span>À PROPOS</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </li>
         <li class="menu__item">
           <a class="menu_link " href="#competences">
             Mes compétences
           </a>
+          <div class="marquee__section third">
+            <div class="marquee__conainer">
+              <div class="marquee">
+                <div class="marquee__inner first">
+                  <span>MES COMPÉTENCES</span><span>MES COMPÉTENCES</span><span>MES COMPÉTENCES</span><span>MES
+                    COMPÉTENCES</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </li>
         <li class="menu__item">
           <a class="menu_link " href="#projets">
             Mes projets
           </a>
+          <div class="marquee__section fourth">
+            <div class="marquee__conainer">
+              <div class="marquee">
+                <div class="marquee__inner second">
+                  <span>MES PROJETS</span><span>MES PROJETS</span><span>MES PROJETS</span><span>MES PROJETS</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </li>
         <li class="menu__item">
           <a class="menu_link " href="#contact">
             Me contacter
           </a>
+          <div class="marquee__section fifth">
+            <div class="marquee__conainer">
+              <div class="marquee">
+                <div class="marquee__inner first">
+                  <span>ME CONTACTER</span><span>ME CONTACTER</span><span>ME CONTACTER</span><span>ME CONTACTER</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </li>
         <li class="menu__item">
           <a class="nav-link custom-link" href="/img/cv_aurélien_jacob.pdf"><i class="fas fa-file-download"></i>
@@ -69,7 +118,7 @@
         <p class="number__number ">01</p>
       </div>
     </div>
-    <section class="banner">
+    <section class="banner" data-scroll data-scroll-speed="2" data-scroll-direction="horizontal">
       <img src="/img/aurelien_jacob2.webp" alt="Portrait Aurélien Jacob" class="banner__profile --border">
       <div class="banner__container">
         <h1 class="banner__title"><span id="bonjour">Bonjour</span>,<br> je suis <span class="underline">Aurélien
@@ -91,7 +140,7 @@
   </header>
   <main>
     <div class="diagonal__box --diagonal"> </div>
-    <section class="about" id="a-propos">
+    <section class="about" id="a-propos" data-scroll data-scroll-speed="2" data-scroll-direction="vertical">
       <div class="number__section --about">
         <div class="number__container --aboutnbr --orange">
           <p class="number__text ">À propos</p>
@@ -204,7 +253,8 @@
             alt="Mockup du site de l'atelier Bunus & Galioto">
           <h4 class="projects__title">Atelier Bunus & Galioto</h4>
           <p class="projects__paragraph">Réalisation de la charte graphique et développement sous Wordpress du site
-            de l'atelier Bunus & Galioto, atelier de restauration de tableaux et d'oeuvres d'art situé dans le centre de
+            de l'atelier Bunus & Galioto, atelier de restauration de tableaux et d'oeuvres d'art situé dans le centre
+            de
             Meaux.<br> <span>(site actuellement hors
               ligne)</span></p>
           </p>
@@ -217,7 +267,9 @@
           <h4 class="projects__title">Showtrack</h4>
           <p class="projects__paragraph --secondproject">Exercice d'intégration réalisé au cours de ma formation <a
               href="https://popschool.fr/">Pop School
-              Lens</a>. Développé en HTML et CSS, cet exercice avait pour objectif de mettre en pratique le <strong>mobile-first</strong> et la <strong>notation BEM</strong>.</p>
+              Lens</a>. Développé en HTML et CSS, cet exercice avait pour objectif de mettre en pratique le
+            <strong>mobile-first</strong> et la <strong>notation BEM</strong>.
+          </p>
           <div class="btn__container --projects">
             <a href="https://showtrack-ajcb.netlify.app" class="projects__btn --btn">Voir le projet</a>
           </div>
@@ -236,7 +288,8 @@
         <div class="projects__card">
           <img class="projects__img" src="/img/mockup_akmedia.webp" alt="Mockup du site de l'agence AK Media Agency">
           <h4 class="projects__title">Ak Media Agency</h4>
-          <p class="projects__paragraph --fourthproject">Réalisation de la maquette et développement du site Wordpress de
+          <p class="projects__paragraph --fourthproject">Réalisation de la maquette et développement du site Wordpress
+            de
             l'agence AK Media Agency, spécialisée dans le marketing de luxe. <br> <span>(site actuellement hors
               ligne)</span></p>
           <div class="btn__container --projects">
@@ -244,9 +297,11 @@
           </div>
         </div>
         <div class="projects__card">
-          <img class="projects__img" src="/img/mockup_password_generator.webp" alt="Mockup d'un générateur de mot de passe">
+          <img class="projects__img" src="/img/mockup_password_generator.webp"
+            alt="Mockup d'un générateur de mot de passe">
           <h4 class="projects__title">Générateur de mot de passe</h4>
-          <p class="projects__paragraph --fourthproject">Développé en Javascript, HTML et CSS, ce générateur permet de générer un mot de passe sécurisé et de le copier directement.</p>
+          <p class="projects__paragraph --fourthproject">Développé en Javascript, HTML et CSS, ce générateur permet de
+            générer un mot de passe sécurisé et de le copier directement.</p>
           <div class="btn__container --projects">
             <a href="https://generateur-motdepasse.netlify.app/" class="projects__btn --btn">Voir le projet</a>
           </div>
@@ -254,7 +309,8 @@
         <div class="projects__card">
           <img class="projects__img" src="/img/mockup_gtbconseils.webp" alt="Mockup d'un générateur de mot de passe">
           <h4 class="projects__title">GTB Conseils</h4>
-          <p class="projects__paragraph --fourthproject">Développement du site sous Wordpress de GTB COnseils. Agence spécialisé dans la formation et l'accompagnement de la gestion de vos finances.</p>
+          <p class="projects__paragraph --fourthproject">Développement du site sous Wordpress de GTB COnseils. Agence
+            spécialisé dans la formation et l'accompagnement de la gestion de vos finances.</p>
           <div class="btn__container --projects">
             <a href="https://www.gtbconseils.com/" class="projects__btn --btn">Voir le projet</a>
           </div>
@@ -304,7 +360,7 @@
   </main>
   <footer>
     <p class="footer__copyright">
-      Copyright &copy; 
+      Copyright &copy;
       <script>
         document.write(new Date().getFullYear());
       </script>
@@ -312,17 +368,15 @@
       <!-- <a href="/mentions-legales.html">Mentions légales</a> -->
     </p>
   </footer>
-  <script src="app.js"></script>
+  <script src="/app.js"></script>
+  <script src="/locomotive-scroll.min.js"></script>
+  <script>
+    const scroll = new LocomotiveScroll({
+      el: document.querySelector('[data-scroll-container]'),
+      smooth: false
+    });
+  </script>
   <script src="https://kit.fontawesome.com/dfc1fcd53d.js" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-  </script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-  </script>
 </body>
 
 </html>
