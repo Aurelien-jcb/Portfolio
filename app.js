@@ -22,6 +22,7 @@ updateHello();
 /**
  * Menu section
  */
+const body = document.body;
 const menuToggle = document.querySelector('.toggle');
 const sideMenu = document.querySelector('.menu__container');
 const navLink = document.querySelectorAll('.menu__item');
