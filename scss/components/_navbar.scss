@@ -1,4 +1,7 @@
 /* NavBar Components */
+nav {
+  position: relative;
+}
 .navbar-brand {
   text-decoration: none;
   color: $fontcolor !important;
@@ -142,12 +145,11 @@
   width: 400px;
   height: 100%;
   top: 0;
+  margin: auto 0;
   right: 0;
-  padding: 10px 0;
+  padding: 120px 0 0 0;
   background-color: $backgroundsection;
   flex-direction: column;
-  justify-content: center;
-  box-shadow: black;
   transition: all 0.3s linear;
   transform: translate(102%);
   z-index: 5;

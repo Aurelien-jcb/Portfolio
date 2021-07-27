@@ -32,7 +32,7 @@
       </button>
       <ul class="menu__container">
         <li class="menu__item">
-          <a class="menu_link" href="#accueil">
+          <a class="menu_link" href="#accueil" data-scroll-to>
             Accueil
           </a>
           <div class="marquee__section first">
@@ -46,7 +46,7 @@
           </div>
         </li>
         <li class="menu__item">
-          <a class="menu_link " href="#a-propos">
+          <a class="menu_link " href="#a-propos" data-scroll-to>
             À propos
           </a>
           <div class="marquee__section second">
@@ -60,7 +60,7 @@
           </div>
         </li>
         <li class="menu__item">
-          <a class="menu_link " href="#competences">
+          <a class="menu_link " href="#competences" data-scroll-to>
             Mes compétences
           </a>
           <div class="marquee__section third">
@@ -75,7 +75,7 @@
           </div>
         </li>
         <li class="menu__item">
-          <a class="menu_link " href="#projets">
+          <a class="menu_link " href="#projets" data-scroll-to>
             Mes projets
           </a>
           <div class="marquee__section fourth">
@@ -89,7 +89,7 @@
           </div>
         </li>
         <li class="menu__item">
-          <a class="menu_link " href="#contact">
+          <a class="menu_link " href="#contact" data-scroll-to>
             Me contacter
           </a>
           <div class="marquee__section fifth">
@@ -112,7 +112,7 @@
     </nav>
   </header>
   <header id="accueil">
-    <div class="number__section --desktop">
+    <div class="number__section --desktop" data-scroll data-scroll-speed="4" data-scroll-direction="vertical">
       <div class="number__container">
         <p class="number__text">Accueil</p>
         <p class="number__number ">01</p>
@@ -126,7 +126,7 @@
           <strong>Développeur web & web mobile</strong>
         </h1>
         <div class="btn__container">
-          <a href="#contact" class="banner__btn --btn">Contactez-moi</a>
+          <a href="#contact" class="banner__btn --btn" data-scroll-to>Contactez-moi</a>
         </div>
       </div>
     </section>
@@ -140,15 +140,15 @@
   </header>
   <main>
     <div class="diagonal__box --diagonal"> </div>
-    <section class="about" id="a-propos" data-scroll data-scroll-speed="2" data-scroll-direction="vertical">
-      <div class="number__section --about">
+    <section class="about" id="a-propos">
+      <div class="number__section --about"  data-scroll data-scroll-speed="4" data-scroll-direction="vertical">
         <div class="number__container --aboutnbr --orange">
           <p class="number__text ">À propos</p>
           <p class="number__number ">02</p>
         </div>
       </div>
-      <img src="/img/laptop_code.webp" alt="Photo d'un ordinateur avec du code" class="about__picture">
-      <div class="about__content">
+      <img src="/img/laptop_code.webp" alt="Photo d'un ordinateur avec du code" class="about__picture"  data-scroll data-scroll-speed="1" data-scroll-direction="vertical">
+      <div class="about__content"  data-scroll data-scroll-speed="2" data-scroll-direction="vertical">
         <h2 class="about__title">
           À propos de moi
         </h2>
@@ -175,7 +175,7 @@
       </div>
     </section>
     <section class="skills" id="competences">
-      <div class="number__section">
+      <div class="number__section" data-scroll data-scroll-speed="4" data-scroll-direction="vertical">
         <div class="number__container --skillsnbr">
           <p class="number__text">Compétences</p>
           <p class="number__number ">03</p>
@@ -241,7 +241,7 @@
       </div>
     </section>
     <section class="project" id="projets">
-      <div class="number__section --canceldiagonal">
+      <div class="number__section --canceldiagonal" data-scroll data-scroll-speed="4" data-scroll-direction="vertical">
         <div class="number__container --orange">
           <p class="number__text">Projets</p>
           <p class="number__number ">04</p>
@@ -318,7 +318,7 @@
       </div>
     </section>
     <section class="contact" id="contact">
-      <div class="number__section">
+      <div class="number__section" data-scroll data-scroll-speed="7" data-scroll-direction="vertical">
         <div class="number__container">
           <p class="number__text ">Contact</p>
           <p class="number__number ">05</p>
@@ -373,7 +373,7 @@
   <script>
     const scroll = new LocomotiveScroll({
       el: document.querySelector('[data-scroll-container]'),
-      smooth: false
+      smooth: true
     });
   </script>
   <script src="https://kit.fontawesome.com/dfc1fcd53d.js" crossorigin="anonymous"></script>

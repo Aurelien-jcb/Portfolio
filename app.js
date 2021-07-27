@@ -29,7 +29,6 @@ const navLink = document.querySelectorAll('.menu__item');
 menuToggle.addEventListener('click', () => {
     menuToggle.classList.toggle('opened');
     sideMenu.classList.toggle('openedMenu');
-
 })
 
 navLink.forEach(function (elem) {
